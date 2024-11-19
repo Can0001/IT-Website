@@ -18,38 +18,40 @@
             <li><a href="services">Services</a></li>
             <li><a href="contact">İletişim</a></li>
         </ul>
+        <a href="#" class="action_btn">Ara</a>
         <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
         </div>
-        
-        <a href="#" class="search_btn">Arama</a> 
+
+        <div class="dropdown_menu">
+            <li><a href="home">Ana Sayfa</a></li>
+            <li><a href="about">Hakkımızda</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">İletişim</a></li>
+            <li><a href="#" class="action_btn">Ara</a></li>
+        </div>
     </header>
 
-    <div class="search_overlay">
-        <div class="search_box">
-            <input type="text" placeholder="Arama yapın...">
-            <button class="close_search"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-    </div>
+    <main>
+        <section id="home">
+            <h1>Welcome</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus necessitatibus beatae officia!</p>
+        </section>
+    </main>
 
     <script>
-        const searchBtn = document.querySelector('.search_btn');
-        const searchOverlay = document.querySelector('.search_overlay');
-        const closeSearch = document.querySelector('.close_search');
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
 
-        searchBtn.onclick = function () {
-            searchOverlay.classList.add('open');
-        };
-
-        closeSearch.onclick = function () {
-            searchOverlay.classList.remove('open');
-        };
-
-        window.onclick = function (event) {
-            if (event.target === searchOverlay) {
-                searchOverlay.classList.remove('open');
-            }
-        };
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+            
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
     </script>
 </body>
 </html>
