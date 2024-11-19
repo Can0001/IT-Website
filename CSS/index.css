@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     background-color: #000;
-    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
     background-size: cover;
     background-position: center;
 }
@@ -112,19 +112,33 @@ header {
     justify-content: center;
 }
 
-section#home{
+section#home {
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
+    padding: 0 1rem; /* Sağ ve sol padding ekleyerek içerik sıkışmasını önleriz */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Metni daha okunabilir hale getirmek için gölge ekledim */
 }
 
-#home h1{
+#home h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-weight: 600; /* Daha kalın bir yazı tipi kullanarak başlığı vurguladım */
+    line-height: 1.2; /* Başlıkların daha sıkışık olmasını sağlamak için */
+    text-transform: uppercase; /* Başlıkları büyük harfe çevirelim */
+    letter-spacing: 2px; /* Harfler arasında biraz daha boşluk bıraktım */
+}
+
+#home p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px; /* Paragrafın çok geniş olmaması için bir sınır belirledim */
+    margin: 0 auto; /* Paragrafı ortaladım */
+    font-weight: 300; /* Yazıyı biraz daha hafif yaptım */
 }
 
 @media (max-width: 992px) {
@@ -168,5 +182,17 @@ section#home{
     .dropdown_menu .action_btn:active {
         transform: scale(0.95);  /* Aktif durumda küçülme efekti */
     }
-}
 
+    section#home {
+        padding: 0 2rem; /* Küçük ekranlarda daha fazla iç padding ile içerikleri genişletiyoruz */
+    }
+
+    #home h1 {
+        font-size: 2.5rem; /* Mobilde başlığı biraz küçültüyoruz */
+        margin-bottom: 1rem;
+    }
+
+    #home p {
+        font-size: 1rem; /* Paragraf metnini mobilde biraz küçültüyoruz */
+    }
+}
