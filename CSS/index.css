@@ -120,25 +120,25 @@ section#home {
     justify-content: center;
     text-align: center;
     color: #fff;
-    padding: 0 1rem; /* Sağ ve sol padding ekleyerek içerik sıkışmasını önleriz */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Metni daha okunabilir hale getirmek için gölge ekledim */
+    padding: 0 1rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 #home h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    font-weight: 600; /* Daha kalın bir yazı tipi kullanarak başlığı vurguladım */
-    line-height: 1.2; /* Başlıkların daha sıkışık olmasını sağlamak için */
-    text-transform: uppercase; /* Başlıkları büyük harfe çevirelim */
-    letter-spacing: 2px; /* Harfler arasında biraz daha boşluk bıraktım */
+    font-weight: 600; 
+    line-height: 1.2; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
 }
 
 #home p {
     font-size: 1.2rem;
     line-height: 1.6;
-    max-width: 800px; /* Paragrafın çok geniş olmaması için bir sınır belirledim */
-    margin: 0 auto; /* Paragrafı ortaladım */
-    font-weight: 300; /* Yazıyı biraz daha hafif yaptım */
+    max-width: 800px; 
+    margin: 0 auto; 
+    font-weight: 300; 
 }
 
 @media (max-width: 992px) {
@@ -164,35 +164,35 @@ section#home {
         align-items: center;
         text-align: center;
         margin-bottom: 2px;
-        padding: 0.6rem 1.3rem;  /* Hafifçe geniş iç alan */
-        background-color: rgba(0, 0, 0, 0.7);  /* Daha zarif arka plan rengi */
-        font-size: 1rem;  /* Küçük cihazlarda okunabilirlik için */
-        border-radius: 30px;  /* Yuvarlatılmış kenarlar */
+        padding: 0.6rem 1.3rem;  
+        background-color: rgba(0, 0, 0, 0.7);  
+        font-size: 1rem;  
+        border-radius: 30px;  
         color: #fff;
-        font-weight: 500;  /* Hafifçe daha ince yazı */
-        transition: all 0.3s ease;  /* Yumuşak geçişler */
+        font-weight: 500;  
+        transition: all 0.3s ease;  
     }
 
     .dropdown_menu .action_btn:hover {
-        background-color: rgba(0, 0, 0, 0.85);  /* Hover için koyulaşan arka plan */
-        color: orange;  /* Hoverda yazı rengi değişimi */
-        transform: scale(1.05);  /* Hoverda şık bir büyüme efekti */
+        background-color: rgba(0, 0, 0, 0.85);  
+        color: orange;  
+        transform: scale(1.05);  
     }
 
     .dropdown_menu .action_btn:active {
-        transform: scale(0.95);  /* Aktif durumda küçülme efekti */
+        transform: scale(0.95); 
     }
 
     section#home {
-        padding: 0 2rem; /* Küçük ekranlarda daha fazla iç padding ile içerikleri genişletiyoruz */
+        padding: 0 2rem; 
     }
 
     #home h1 {
-        font-size: 2.5rem; /* Mobilde başlığı biraz küçültüyoruz */
+        font-size: 2.5rem; 
         margin-bottom: 1rem;
     }
 
     #home p {
-        font-size: 1rem; /* Paragraf metnini mobilde biraz küçültüyoruz */
+        font-size: 1rem; 
     }
 }
