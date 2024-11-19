@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IT-Website</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="#">IT-WEBSİTE</a></div>
+        <ul class="links">
+            <li><a href="home">Ana Sayfa</a></li>
+            <li><a href="about">Hakkımızda</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">İletişim</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+        <a href="#" class="search_btn">Arama</a> 
+    </header>
+
+    <div class="search_overlay">
+        <div class="search_box">
+            <input type="text" placeholder="Arama yapın...">
+            <button class="close_search"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <script>
+        const searchBtn = document.querySelector('.search_btn');
+        const searchOverlay = document.querySelector('.search_overlay');
+        const closeSearch = document.querySelector('.close_search');
+
+        searchBtn.onclick = function () {
+            searchOverlay.classList.add('open');
+        };
+
+        closeSearch.onclick = function () {
+            searchOverlay.classList.remove('open');
+        };
+
+        window.onclick = function (event) {
+            if (event.target === searchOverlay) {
+                searchOverlay.classList.remove('open');
+            }
+        };
+    </script>
+</body>
+</html>
