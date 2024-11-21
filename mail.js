@@ -4,7 +4,7 @@ const subjectInput = document.querySelector('#subject');
 const emailInput = document.querySelector('#email');
 const messageInput = document.querySelector('#message');
 
-const serviceID = 'service_e8jwb4p';
+const serviceID = 'service_9dxy18k';
 const templateID = 'template_u3hl74j';
 const publicKey = 'ux58CH5EHJSxbx4wd';
 
