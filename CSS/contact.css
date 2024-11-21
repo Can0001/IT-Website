@@ -257,23 +257,60 @@ section#home {
     background-color: rgba(0, 0, 0, 0.6); 
 }
 
-#home .cta-btn {
-    margin-top: 2rem;
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
+
+#contact-form {
+    background-color: rgba(0, 0, 0, 0.6); /* Form arka planı */
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+#contact-form button {
     background-color: #ff7f50;
     color: #fff;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    z-index: 2;
+    margin-top: 1.5rem;
 }
 
-#home .cta-btn:hover {
+#contact-form button:hover {
     background-color: #ff5722;
     transform: scale(1.05);
 }
+
+#contact-form button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 
 @media (max-width: 992px) {
     .navbar .links,
@@ -420,7 +457,7 @@ section#home {
 
     @media (max-width: 480px) {
         #home h1 {
-            font-size: 2rem;
+            font-size: 3rem;
         }
 
         #home p {

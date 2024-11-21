@@ -420,11 +420,11 @@ section#home {
 
     @media (max-width: 480px) {
         #home h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         #home p {
-            font-size: 1.2rem;
+            font-size: 0.85rem;
         }
 
         .navbar .logo a {

@@ -7,30 +7,33 @@ const searchInput = document.querySelector('.search_box input');
 const closeSearchBtn = document.querySelector('.close_search');
 const dropdownActionBtn = document.querySelector('.dropdown_menu .action_btn');  
 
+
 toggleBtn.onclick = function () {
     dropDownMenu.classList.toggle('open');
     const isOpen = dropDownMenu.classList.contains('open');
     
     toggleBtnIcon.classList = isOpen
-    ?'fa-solid fa-xmark'
-    :'fa-solid fa-bars'
+    ? 'fa-solid fa-xmark' 
+    : 'fa-solid fa-bars'; 
 }
+
 
 actionBtn.onclick = function(event) {
     event.preventDefault();  
-    searchBox.classList.add('open');
+    searchBox.classList.add('active'); 
     searchInput.focus();  
 }
 
+
 closeSearchBtn.onclick = function() {
-    searchBox.classList.remove('open');
+    searchBox.classList.remove('active'); 
 }
 
-// Responsive dropdown'daki action_btn'yi de aynı işlevi görüyor
+
 if (dropdownActionBtn) {
     dropdownActionBtn.onclick = function(event) {
         event.preventDefault();  
-        searchBox.classList.add('open');
+        searchBox.classList.add('active'); 
         searchInput.focus();  
     }
 }
