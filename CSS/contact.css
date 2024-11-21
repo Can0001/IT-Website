@@ -219,6 +219,7 @@ section#home {
     position: relative;
 }
 
+
 #home h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
@@ -229,6 +230,8 @@ section#home {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     z-index: 2;
     transition: all 0.3s ease;
+    position: relative; 
+    margin-top: 80px; 
 }
 
 #home h1:hover{
@@ -259,7 +262,7 @@ section#home {
 
 
 #contact-form {
-    background-color: rgba(0, 0, 0, 0.6); /* Form arka planı */
+    background-color: rgba(0, 0, 0, 0.6); 
     border-radius: 10px;
     padding: 2rem;
     max-width: 600px;
@@ -374,9 +377,10 @@ section#home {
     }
 
     #home h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         padding-bottom: 60px;
         margin-bottom: 1.5rem;
+        margin-top: 70px;
         font-weight: 700;
         line-height: 1.2;
         text-transform: uppercase;
@@ -393,22 +397,22 @@ section#home {
     }
 
     #home p {
-        font-size: 1rem;
-        line-height: 1.4;
-        max-width: 800px;
+        font-size: 1.3rem;
+        line-height: 1.8;
+        max-width: 900px;
         margin: 0 auto;
         font-weight: 300;
-        z-index: 1;
-        background: rgba(0, 0, 0, 0.4);
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        transition: transform 0.3s ease, color 0.3s ease;
-        top: 20%;
-        max-height: 60%;
-        overflow-y: auto;
-        padding: 10px;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.4); 
+        padding: 1.5rem; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+        transition: transform 0.3s ease, color 0.3s ease; 
+        position: relative;
+        max-height: none; 
+        overflow: visible; 
     }
+    
 
     #home p:hover {
         transform: translateY(-5px);
@@ -422,8 +426,9 @@ section#home {
         }
 
         #home h1 {
-            font-size: 2rem;
+            font-size: 2rem; 
             margin-bottom: 0.8rem;
+            margin-top: 60px;
         }
 
         #home p {
@@ -461,7 +466,7 @@ section#home {
         }
 
         #home p {
-            font-size: 0.80rem;
+            font-size: 1.2rem;
         }
 
         .navbar .logo a {
@@ -484,6 +489,13 @@ section#home {
         .action_btn {
             font-size: 0.6rem;
             padding: 0.3rem 0.6rem;
+        }
+    }
+
+    @media (max-width: 375px) { 
+        #home h1 {
+            font-size: 1.8rem; 
+            margin-top: 150px; 
         }
     }
 }
