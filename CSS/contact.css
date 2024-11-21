@@ -340,13 +340,13 @@ section#home {
         align-items: center;
         text-align: center;
         margin-bottom: 2px;
-        padding: 0.6rem 1.3rem;  
-        background-color: rgba(0, 0, 0, 0.7);  
-        font-size: 1rem;  
-        border-radius: 30px;  
+        padding: 0.6rem 1.3rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        font-size: 1rem;
+        border-radius: 30px;
         color: #fff;
-        font-weight: 500;  
-        transition: all 0.3s ease;  
+        font-weight: 500;
+        transition: all 0.3s ease;
     }
 
     .dropdown_menu .action_btn:hover {
@@ -389,7 +389,7 @@ section#home {
     #home h1:hover {
         color: #ff7f50;
         text-shadow: 2px 2px 12px rgba(255, 127, 80, 0.7);
-        transform: scale(1.1) translateY(-5px); 
+        transform: scale(1.1) translateY(-5px);
     }
 
     #home p {
@@ -399,16 +399,15 @@ section#home {
         margin: 0 auto;
         font-weight: 300;
         z-index: 2;
-        background: rgba(0, 0, 0, 0.4); 
-        padding: 1.5rem; 
-        border-radius: 10px; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-        transition: transform 0.3s ease, color 0.3s ease; 
+        background: rgba(0, 0, 0, 0.4);
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease, color 0.3s ease;
         position: relative;
-        max-height: none; 
-        overflow: visible; 
+        max-height: none;
+        overflow: visible;
     }
-    
 
     #home p:hover {
         transform: translateY(-5px);
@@ -416,74 +415,93 @@ section#home {
         background-color: rgba(0, 0, 0, 0.6);
     }
 
-    @media (max-width: 600px) {
-        section#home {
-            padding: 0 1.5rem;
-        }
-
-        #home h1 {
-            font-size: 2rem;
-            margin-bottom: 0.8rem;
-        }
-
-        #home p {
-            font-size: 0.9rem;
-            line-height: 1.5;
-            padding: 12px;
-        }
-
-        .navbar .logo a {
-            font-size: 1.5rem;
-        }
-
-        .navbar .toggle_btn {
-            font-size: 1.2rem;
-        }
-
-        .navbar .links {
-            gap: 1rem;
-        }
-
-        .navbar .links a {
-            font-size: 0.9rem;
-            padding: 0.5rem 1rem;
-        }
-
-        .action_btn {
-            font-size: 0.7rem;
-            padding: 0.4rem 0.8rem;
-        }
+    #contact-form {
+        padding: 1.5rem;
+        max-width: 500px;
     }
 
-    @media (max-width: 480px) {
-        #home h1 {
-            font-size: 3rem;
-        }
+    #contact-form input,
+    #contact-form textarea {
+        padding: 0.8rem;
+        margin: 0.6rem 0;
+    }
 
-        #home p {
-            font-size: 1.2rem;
-        }
+    #contact-form button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
 
-        .navbar .logo a {
-            font-size: 1.3rem;
-        }
+@media (max-width: 600px) {
+    section#home {
+        padding: 0 1.5rem;
+    }
 
-        .navbar .toggle_btn {
-            font-size: 1rem;
-        }
+    #home h1 {
+        font-size: 1.9rem;
+        margin-bottom: 0.3rem;  /* Başlığı paragrafın hemen üstüne aldık */
+        margin-top: 20px;  /* Başlığı biraz daha aşağıya çektik */
+    }
 
-        .navbar .links {
-            gap: 0.8rem;
-        }
+    #home p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding: 12px;
+    }
 
-        .navbar .links a {
-            font-size: 0.85rem;
-            padding: 0.4rem 0.8rem;
-        }
+    .navbar .logo a {
+        font-size: 1.4rem;
+    }
 
-        .action_btn {
-            font-size: 0.6rem;
-            padding: 0.3rem 0.6rem;
-        }
+    .navbar .toggle_btn {
+        font-size: 1.2rem;
+    }
+
+    .navbar .links {
+        gap: 1rem;
+    }
+
+    .navbar .links a {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .action_btn {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 1.7rem;
+        margin-top: 30px;  /* Başlığı daha fazla aşağıya çektik */
+        margin-bottom: 0.2rem;  /* Başlığı paragrafın hemen üstüne aldık */
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    .navbar .logo a {
+        font-size: 1.3rem;
+    }
+
+    .navbar .toggle_btn {
+        font-size: 1rem;
+    }
+
+    .navbar .links {
+        gap: 0.8rem;
+    }
+
+    .navbar .links a {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .action_btn {
+        font-size: 0.6rem;
+        padding: 0.3rem 0.6rem;
     }
 }
