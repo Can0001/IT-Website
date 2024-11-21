@@ -219,7 +219,6 @@ section#home {
     position: relative;
 }
 
-
 #home h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
@@ -230,8 +229,6 @@ section#home {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     z-index: 2;
     transition: all 0.3s ease;
-    position: relative; 
-    margin-top: 80px; 
 }
 
 #home h1:hover{
@@ -379,8 +376,7 @@ section#home {
     #home h1 {
         font-size: 2.5rem;
         padding-bottom: 60px;
-        margin-bottom: 2rem;
-        margin-top: 70px;
+        margin-bottom: 1.5rem;
         font-weight: 700;
         line-height: 1.2;
         text-transform: uppercase;
@@ -426,9 +422,8 @@ section#home {
         }
 
         #home h1 {
-            font-size: 2rem; 
-            margin-bottom: 3rem;
-            margin-top: 60px;
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
         }
 
         #home p {
@@ -489,13 +484,6 @@ section#home {
         .action_btn {
             font-size: 0.6rem;
             padding: 0.3rem 0.6rem;
-        }
-    }
-
-    @media (max-width: 375px) { 
-        #home h1 {
-            font-size: 1.8rem; 
-            margin-top: 150px; 
         }
     }
 }
