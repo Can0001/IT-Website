@@ -167,23 +167,23 @@ header {
 }
 
 .search_box {
-    position: fixed; 
+    position: fixed; /* fixed yaparak her zaman ekranın üstünde olacak */
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Ekranın tamamını kapla */
     padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7); /* Ekran karartma */
     z-index: 100;
-    transform: translateY(-100%); 
+    transform: translateY(-100%); /* Başlangıçta gizli */
     transition: transform 0.3s ease-in-out;
 }
 
 .search_box.active {
-    transform: translateY(0); 
+    transform: translateY(0); /* Arama kutusu açıldığında ekranda görünür */
 }
 
 .search_box input {
@@ -352,7 +352,7 @@ section#home {
     #home h1:hover {
         color: #ff7f50;
         text-shadow: 2px 2px 12px rgba(255, 127, 80, 0.7);
-        transform: scale(1.1) translateY(-5px); 
+        transform: scale(1.1) translateY(-5px); /* Yalnızca yukarıya kayma ekledim, sağa kayma yok */
     }
 
     #home p {
@@ -371,8 +371,6 @@ section#home {
         max-height: 60%;
         overflow-y: auto;
         padding: 10px;
-        max-height: none; 
-        overflow: visible;
     }
 
     #home p:hover {

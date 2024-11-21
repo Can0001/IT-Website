@@ -439,8 +439,8 @@ section#home {
 
     #home h1 {
         font-size: 1.9rem;
-        margin-bottom: 0.3rem;  /* Başlığı paragrafın hemen üstüne aldık */
-        margin-top: 20px;  /* Başlığı biraz daha aşağıya çektik */
+        margin-bottom: 0.3rem;  
+        margin-top: 20px;  
     }
 
     #home p {
@@ -475,8 +475,8 @@ section#home {
 @media (max-width: 480px) {
     #home h1 {
         font-size: 1.7rem;
-        margin-top: 30px;  /* Başlığı daha fazla aşağıya çektik */
-        margin-bottom: 0.2rem;  /* Başlığı paragrafın hemen üstüne aldık */
+        margin-top: 30px;  
+        margin-bottom: 0.2rem;  
     }
 
     #home p {
