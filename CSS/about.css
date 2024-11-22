@@ -167,23 +167,23 @@ header {
 }
 
 .search_box {
-    position: fixed; /* fixed yaparak her zaman ekranın üstünde olacak */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Ekranın tamamını kapla */
+    height: 100vh; 
     padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Ekran karartma */
+    background-color: rgba(0, 0, 0, 0.7); 
     z-index: 100;
-    transform: translateY(-100%); /* Başlangıçta gizli */
+    transform: translateY(-100%); 
     transition: transform 0.3s ease-in-out;
 }
 
 .search_box.active {
-    transform: translateY(0); /* Arama kutusu açıldığında ekranda görünür */
+    transform: translateY(0); 
 }
 
 .search_box input {
@@ -275,6 +275,69 @@ section#home {
     transform: scale(1.05);
 }
 
+footer {
+    margin-top: auto; 
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-links {
+    margin-top: 1rem;
+}
+
+footer .footer-links a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: #ff7f50;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+footer .social-media .social-icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-media .social-icon i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+footer .social-media #WhatsApp:hover {
+    color: #128C7E;
+}
+
+footer .social-media #Instagram:hover {
+    color: #E4405F;
+}
+
+footer .social-media .social-icon:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 992px) {
     .navbar .links,
     .navbar .action_btn {
@@ -352,7 +415,7 @@ section#home {
     #home h1:hover {
         color: #ff7f50;
         text-shadow: 2px 2px 12px rgba(255, 127, 80, 0.7);
-        transform: scale(1.1) translateY(-5px); /* Yalnızca yukarıya kayma ekledim, sağa kayma yok */
+        transform: scale(1.1) translateY(-5px); 
     }
 
     #home p {
@@ -415,6 +478,15 @@ section#home {
         .action_btn {
             font-size: 0.7rem;
             padding: 0.4rem 0.8rem;
+        }
+
+        footer .social-media {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    
+        footer .social-media .social-icon {
+            font-size: 1rem;
         }
     }
 
